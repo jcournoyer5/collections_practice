@@ -7,6 +7,26 @@ def sort_array_desc(array)
 end
 
 def sort_array_char_count(a, b)
-   array.sort ((a, b) = a.length - b.length)
-  return array.length
+   array.sort do |a, b| 
+ a.length <=> b.length
+end
+end
+
+def swap_elements(array)
+    array[1], array[2] = array[2], array[1]
+    array
+end
+def reverse_array(array)
+    array.reverse
+end
+    
+def kesha_maker(array)
+    array.map do |name|
+        name[2] = "$"
+        name
+    end
+end
+
+def find_a(array)
+    array.find_all {|word| word.start_with?("a")}
 end
