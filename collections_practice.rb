@@ -8,4 +8,5 @@ end
 
 def sort_array_char_count(a, b)
    array.sort ((a, b) = a.length - b.length)
+  return array.length
 end
