@@ -1,4 +1,4 @@
-def using_include(array, element)
- array.sort(element)
+def sort_array_asc(array)
+ array.sort
 end
 
